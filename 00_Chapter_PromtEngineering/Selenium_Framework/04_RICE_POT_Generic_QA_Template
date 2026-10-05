@@ -1,0 +1,38 @@
+
+
+
+**Application:** Shopify public website  
+**Target URL:** [https://www.shopify.com/in](https://www.shopify.com/in)  
+**Objective:** Check that key pages and public-facing interactions work across common browsers and screen sizes.
+
+**In Scope**
+- Homepage loading and primary content
+- Navigation and links
+- Prominent calls to action
+- Responsive layout
+- Basic accessibility and page performance checks
+
+**Out of Scope**
+- Merchant admin or authenticated workflows
+- Payment processing, checkout, and store-specific functionality
+- Load, security, and compatibility testing beyond basic smoke checks
+
+**Test Environment**
+- Current versions of Chrome, Firefox, and Edge
+- Desktop and mobile viewport sizes
+- Public internet access; no account required for the basic checks
+
+| ID | Test | Expected Result |
+|---|---|---|
+| SHP-01 | Open the target URL | The page loads without a browser error; the main content is visible. |
+| SHP-02 | Check the page title and primary heading | They are present and relevant to the page. |
+| SHP-03 | Use the main navigation links | Each link opens its intended destination without a broken-page error. |
+| SHP-04 | Select a prominent call-to-action | It opens the expected next page or flow. |
+| SHP-05 | Use the site on a mobile-sized viewport | Content remains readable and controls usable without unintended horizontal scrolling. |
+| SHP-06 | Check images and visible media | They load and do not appear broken or obscure page content. |
+| SHP-07 | Navigate with the keyboard | Interactive controls can be reached and used with keyboard navigation. |
+| SHP-08 | Reload the page and revisit it | The page remains accessible and loads consistently. |
+
+**Entry Criteria:** The public site is reachable and the test environment has internet access.  
+**Exit Criteria:** All planned checks are run; failures are recorded with browser, viewport, steps, and evidence.  
+**Assumption:** This plan covers Shopify’s public marketing website, not an individual Shopify-powered store. Actual page content and destinations should be confirmed during execution.
